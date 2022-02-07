@@ -1,0 +1,11 @@
+import csv
+employee = open ('customers.csv', r)
+
+customer_file= cvs.reader(customers, delimiter =',')
+
+outfile = open('customer_country.cvs', 'w')
+
+for record in customer_file:
+    outfile.write(record[1])+","+record[2]+","+record[4]+"\n")
+    
+outfile.close()
