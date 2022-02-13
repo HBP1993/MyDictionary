@@ -11,7 +11,8 @@ sampleDict = {
 # print(history_value)
 print(sampleDict["class"]["student"]["marks"]["history"])
 
-"""
+
+
 # 2) Add 2 inches to the son's height.
 
 dict = {
@@ -20,10 +21,13 @@ dict = {
     "son's height": 32,
     "son's weight": 25,
 }
-dict["son's height"] = int(dict["son's height"]) + 2
+dict["son's height"] = int(dict["son's height"]) + 2 #this will simply update with other remain the same
+#you can remove the int( part but its good to have 
 print(dict)
 
-
+# son_height = dict["son's height"]+2 #this will just give you son's height 
+# print(son_height)
+                  
 
 # 3) Given a Python dictionary, Change Brad’s salary to 8500
 
@@ -33,10 +37,11 @@ sampleDict = {
     "emp3": {"name": "Brad", "salary": 6500},
 }
 
-sampleDict["emp3"]["salary"] = 8500
+sampleDict["emp3"]["salary"] = 8500 #if you want to change salary 
 print(sampleDict)
 
-
+# sampleDict["emp3"]["name"]= "Pitt" #if you want to change name 
+# print(sampleDict)
 
 
 
@@ -51,6 +56,8 @@ dict = {
     "student": "Aristotle",
 }
 
+# dict["work"] = ["Apology", "Phaedo", "Republic", "Symposium"]
+# print(dict)
+
 dict["work"] = ["Apology", "Phaedo", "Republic", "Symposium"]
 print(dict)
-"""
