@@ -97,20 +97,19 @@ def deal_cards(deck, number):
         card, value = deck.popitem()
         print(card)
         hand_value += value
-    """
+    """ #popitem just showing last num_cards you entered
     import random
 
     for count in range(number):
-        card = random.choice(list(deck))
+        card = random.choice(list(deck)) #random.choice would pick a card and cards converted in list 
         value = deck[card]
-
         print(card)
         hand_value += value
 
-        del deck[card]
+        del deck[card] #you need to remove selected card out of dack
 
     # Display the value of the hand.
-    print("value of this hand:', hand_value")
+    print("value of this hand: ", hand_value)
 
 
 # Call the main function.

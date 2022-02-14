@@ -17,7 +17,7 @@ room-number,use,sq-ft,price
 
 
 
-
+#here datastore is dictionary and medical is key; the value of medical is list of dictionaris
 datastore = { "medical":[
       { "room-number": 100,
         "use": "reception",
@@ -51,13 +51,18 @@ datastore = { "medical":[
 outfile = open('retail_space.cvs', 'w')
 outfile.write('room-number, use, sq.ft, price\n')
 
-mylist = datastore['medical']
+mylist = datastore['medical'] #important to understand
 
 print(type(mylist))
-for i in datastore['medical']:
+
+#for loop
+#for l in datastore['medical']:#datastore medical is list and l refers to each element on that list 
+#       print(type(mylist)) #mylist is the list of dictionaries
+#       outfile.write(str(1))
+#       print(type(l))
+
+for l in mylist: # l is just a iterator 
+    #we have to convert string before we write to a file, whenever we import or export file we have to convert string first
+    outfile.write(str(1["room-number"])+','+1["use"]+','+str(1["sq-ft"])+','+str(1["price"])+'\n')
       
-      outfile.write(str(1))
-  
-  print(type(i))
-  
-  outfile.close()
+outfile.close()
